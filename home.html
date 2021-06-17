@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<link rel="stylesheet" href="stylesheet.css">
+
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Antonio:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+
+	<div class="fade-in">
+		<div class="container">
+			<div class="menu">
+				<h1 class="header special" ><a href="home.html" style="text-decoration:none; color:silver;">Isis Hurley-Jones</a></h1>
+				<p class="text" style="font-size:24px">Costume, Set & Production Design</p>
+				<p class="text padding"> <a href="mission.html" style="text-decoration:none; color:silver;">My Mission</a></p>
+				<p class="text padding"> <a href="reflective.html" style="text-decoration:none; color:silver;">Reflective Statement</a></p>
+				<button class="accordion text">Projects</button>
+				<div class="panel">
+					<p class="text" style="font-size:20px;"><a href="timeline.html" style="text-decoration:none; color:silver; font-style: italic;">Timeline</a></p>
+					<p class="text" style="font-size:20px;"><a href="project2.html" style="text-decoration:none; color:silver; font-style: italic;">When Another Does the Same</a><p>
+						<p class="text" style="font-size:20px;"><a href="project3.html" style="text-decoration:none; color:silver; font-style: italic;">Square Peg, Round Hole</a></p>
+						<p class="text" style="font-size:20px;"><a href="project4.html" style="text-decoration:none; color:silver; font-style: italic;">Collective</a></p>
+						<p class="text" style="font-size:20px;"><a href="project1.html" style="text-decoration:none; color:silver; font-style: italic;">The Keeper</a></p>
+						<p class="text" style="font-size:20px;"><a href="project7.html" style="text-decoration:none; color:silver; font-style: italic;">Pleasance</a></p>
+						<p class="text" style="font-size:20px;"><a href="project6.html" style="text-decoration:none; color:silver; font-style: italic;">Janet</a></p>
+						<p class="text" style="font-size:20px;"><a href="project5.html" style="text-decoration:none; color:silver; font-style: italic;">CSM Alive</a></p>
+					</div>
+					<a href="CV.html" target="_blank" style="text-decoration:none; color:silver;"> <p class="text padding" style="font-size: 28px;">CV</p></a>
+					<a href="Contact.html" style="text-decoration:none; color:silver;"><p class="text padding" style="font-size: 28px;">Contact</p></a>
+				</div>
+				<div class="rectangle">
+
+					<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+					<div class="imageContainer">
+						<div class="mySlides">
+							<img src="Image1.jpeg" style="width:100%;">
+						</div>
+						<div class="mySlides">
+							<img src="Image2.jpeg" style="width:100%;">
+						</div>
+
+						<div class="mySlides">
+							<img src="Image3.jpeg" style="width:100%;">
+						</div>
+
+						<div class="mySlides">
+							<img src="Image4.jpeg" style="width:100%;">
+						</div>
+
+						<div class="mySlides">
+							<img src="Image5.jpeg" style="width:100%;">
+						</div>
+					</div>
+
+					<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+					<div class="caption-container">
+						<p class="caption"></p>
+					</div>
+
+
+				</div>
+			</div>
+		</div>
+
+
+		<script>
+			var acc = document.getElementsByClassName("accordion");
+			var i;
+
+			for (i = 0; i < acc.length; i++) {
+				acc[i].addEventListener("click", function() {
+					this.classList.toggle("active");
+					var panel = this.nextElementSibling;
+					if (panel.style.display === "block") {
+						panel.style.display = "none";
+					} else {
+						panel.style.display = "block";
+					}
+				});
+			}
+		</script>
+
+		<script>
+			var slideIndex = 1;
+			showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+	showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+	showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+	var i;
+	var slides = document.getElementsByClassName("mySlides");
+	var dots = document.getElementsByClassName("demo");
+	var captionText = document.getElementById("caption");
+	if (n > slides.length) {slideIndex = 1}
+		if (n < 1) {slideIndex = slides.length}
+			for (i = 0; i < slides.length; i++) {
+				slides[i].style.display = "none";
+			}
+			for (i = 0; i < dots.length; i++) {
+				dots[i].className = dots[i].className.replace(" active", "");
+			}
+			slides[slideIndex-1].style.display = "block";
+			dots[slideIndex-1].className += " active";
+			captionText.innerHTML = dots[slideIndex-1].alt;
+		}
+	</script>
+
+</body>
+</html>

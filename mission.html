@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<link rel="stylesheet" href="stylesheet.css">
+
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Antonio:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+
+	<div class="fade-in">
+		<div class="container">
+			<div class="menu">
+				<h1 class="header special" ><a href="home.html" style="text-decoration:none; color:silver;">Isis Hurley-Jones</a></h1>
+				<p class="text" style="font-size:24px">Costume, Set & Production Design</p>
+				<p class="text padding"> <a href="mission.html" style="text-decoration:none; color:silver;">My Mission</a></p>
+				<p class="text padding"> <a href="reflective.html" style="text-decoration:none; color:silver;">Reflective Statement</a></p>
+
+				<button class="accordion text">Projects</button>
+				<div class="panel">
+					<p class="text" style="font-size:20px;"><a href="timeline.html" style="text-decoration:none; color:silver; font-style: italic;">Timeline</a></p>
+					<p class="text" style="font-size:20px;"><a href="project2.html" style="text-decoration:none; color:silver; font-style: italic;">When Another Does the Same</a><p>
+						<p class="text" style="font-size:20px;"><a href="project3.html" style="text-decoration:none; color:silver; font-style: italic;">Square Peg, Round Hole</a></p>
+						<p class="text" style="font-size:20px;"><a href="project4.html" style="text-decoration:none; color:silver; font-style: italic;">Collective</a></p>
+						<p class="text" style="font-size:20px;"><a href="project1.html" style="text-decoration:none; color:silver; font-style: italic;">The Keeper</a></p>
+						<p class="text" style="font-size:20px;"><a href="project7.html" style="text-decoration:none; color:silver; font-style: italic;">Pleasance</a></p>
+						<p class="text" style="font-size:20px;"><a href="project6.html" style="text-decoration:none; color:silver; font-style: italic;">Janet</a></p>
+						<p class="text" style="font-size:20px;"><a href="project5.html" style="text-decoration:none; color:silver; font-style: italic;">CSM Alive</a></p>
+					</div>
+					<a href="CV.html" target="_blank" style="text-decoration:none; color:silver;"> <p class="text padding" style="font-size: 28px;">CV</p></a>
+					<a href="Contact.html" style="text-decoration:none; color:silver;"><p class="text padding" style="font-size: 28px;">Contact</p></a>
+				</div>
+				<div class="contentContainer" style="display: flex;">
+					<br> <br>
+					<img src="selfie.jpeg" width="500" height="800" style="margin: 3vh 0 0 5vw;">
+					<div style="margin: 13vh 5vw;">
+						<h2 style="text-align: center; color: white; font-size: 48px;">Mission Statement</h2>
+						<p class="contentText" style="text-align: left;">As a costume and set designer particularly interested in
+						textiles, I am intrigued by the ways that textures and tones
+						can make both the performer and audience feel the
+						characters, settings, mood of the scene on their skin,
+						enabling them to immerse themselves more deeply in the
+						theatrical experience. My work is concerned with how and
+						when tactility can be used effectively, while considering the
+						ethical issues that can potentially arise when immersing
+						audiences in this way.
+						<br> <br>
+						With the influences of Louise Bourgeois, Fritz Lang, Michael
+						Clark, Eiko Ishioka and Es Devlin, I draw on a background in
+						fine art and textiles to inspire my practice.
+						Working best under time constraints and the excitement of
+						live performance, and as a designer, I am open to
+						fresh challenges in other mediums including film making and
+						exhibitions.
+						<br> <br>
+						Working as a creative duo with Inigo Townsend, we
+						devise productions from scratch including the design of the
+						set & costume to lighting, props, and direction. Our main
+						purpose is centred within immersive experiences to provide
+						creative direction, both in collaboration with creatives and
+						original ideas. We are leaving CSM with a performance
+						company and have secured our first commission as art
+						directors of a commercial immersive theatre experience.</p>
+					</div>
+			</div>
+	</div>
+</div>
+
+
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
+    } else {
+      panel.style.display = "block";
+    }
+  });
+}
+</script>
+
+
+</body>
+</html>
